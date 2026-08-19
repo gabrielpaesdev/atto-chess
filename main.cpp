@@ -21,7 +21,7 @@ int computeAIMove(void* data) {
 int main(int, char*[]) {
     SDL_Init(SDL_INIT_VIDEO);
     SDL_Window* window = SDL_CreateWindow(
-        "Micro Xadrez",
+        "Atto Chess",
         SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
         WINDOW_SIZE, WINDOW_SIZE, SDL_WINDOW_SHOWN
     );
@@ -130,7 +130,7 @@ int main(int, char*[]) {
         SDL_RenderClear(renderer);
 
         if (state == MENU_MAIN) {
-            drawText(renderer, "MICRO XADREZ", 50, 50, 4);
+            drawText(renderer, "ATTO-CHESS", 50, 50, 4);
             drawText(renderer, isLangPT ? "JOGAR" : "PLAY", 100, 200, 3);
             drawText(renderer, isLangPT ? "OPCOES" : "OPTIONS", 100, 250, 3);
             drawText(renderer, isLangPT ? "CREDITOS" : "CREDITS", 100, 300, 3);
