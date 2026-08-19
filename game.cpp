@@ -1,3 +1,6 @@
+#include "game.h"
+#include "board.h"
+#include "moves.h"
 
 bool isSquareAttacked(int8_t x, int8_t y, bool byWhite) {
     int8_t original = board[y][x];
